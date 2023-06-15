@@ -1,53 +1,69 @@
-*{
+* {
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 /**********NAV********/
-nav {
+header h1 {
+  margin: 0%;
+  
+}
+main {
+  background-color: #0d1b2a;
+  background-image: url("../public/img/pawel-czerwinski-yn97LNy0bao-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  color: #fff;
 }
 nav ul {
-list-style:none;
-display: flex;
-padding: 0;
-flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0%;
+  flex-wrap: wrap;
+}
+nav {
+  top: 20px;
 }
 nav ul li > button {
-  width:100px;
-  border: #0D1B2A;
+  width: 100px;
+  border: #0d1b2a;
   border-radius: 100px;
   padding: 10px;
   margin: 5px;
   font-size: 1.2rem;
   font-weight: 600;
   color: black;
-  background-color: #E85D04;
-
+  background-color: #e85d04;
 }
 nav ul li > button:hover {
-  color: #E85D04;
-  background-color: #0D1B2A;
-  border: 1px solid #E85D04
+  color: #e85d04;
+  background-color: #0d1b2a;
+  border: 1px solid #e85d04;
 }
 /*********HOME***********/
 .container {
   display: flex;
   flex-direction: column;
   margin: auto;
+  background-color: #0d1b2a;
   background-image: url(../public/img/pawel-czerwinski-yn97LNy0bao-unsplash.jpg);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -55,24 +71,111 @@ nav ul li > button:hover {
   display: flex;
   padding: 40px;
   flex-direction: column;
-  width: 70vw;
-  height: 60vh;
   margin: auto;
-  background-color: #0D1B2A;
+  background-color: #0d1b2a;
 }
 
 .landingPage > div {
- display: flex;
+  display: flex;
   justify-content: space-between;
-  align-content:flex-start;
+  align-content: flex-start;
 }
-.landingPage > p{
+.landingPage > p {
   color: white;
   font-size: 3rem;
   width: 80%;
-
 }
 .landingPage > div > h1 {
   color: white;
   font-size: 3rem;
+}
+/******************Projects****************/
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.projet1 {
+  display: flex;
+  padding: 5%;
+  color: white;
+  background-color: #0d1b2a;
+}
+.projet1_image {
+  width: 100%;
+  height: auto;
+}
+.projet1_description {
+  display: flex;
+  align-items: center;
+  
+}
+.projet1_description p {
+  padding-left: 10%;
+}
+
+.projet2 {
+  display: flex;
+  padding: 5%;
+}
+.projet2_image {
+  width: 100%;
+  height: auto;
+}
+.projet2_description {
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  background-color: rgba(13, 27, 42, 0.35);
+  height: auto;
+}
+.projet2_description p {
+  padding-left: 10%;
+}
+/*************ME************/
+.me_container, .cv_container {
+  margin: auto;
+  width: 100%;
+  padding-bottom: 5%;
+}
+.me_container div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.me_pic,.cv_container {
+  height: auto;
+}
+.me_description { 
+  text-align: justify;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background-color: rgba(13, 27, 42, 0.35);
+    width: 45%;
+    padding: 15px;
+}
+
+/************CV***************/
+.cv_container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.cv_pic {
+  width: 45%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cv_description {
+  text-align: justify;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background-color: rgba(13, 27, 42, 0.35);
+    width: 45%;
+    padding: 15px;
 }

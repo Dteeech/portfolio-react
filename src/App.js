@@ -1,11 +1,18 @@
-import Home from './views/Home.jsx';
-import Projects from './views/Projects';
+import Home from "./views/Home.jsx";
+import LeftProjects from "./views/Projects.jsx";
+import { Me } from "./views/Me.jsx";
+import { Cv } from "./views/Cv.jsx";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <Projects />
+      <main>
+        <Home />
+        <Me />
+        <LeftProjects />
+        <Cv />
+        
+      </main>
     </div>
   );
 }
