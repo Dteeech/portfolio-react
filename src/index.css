@@ -179,3 +179,81 @@ nav ul li > button:hover {
     width: 45%;
     padding: 15px;
 }
+
+/********Form********/
+.formContainer {
+  display: flex;
+  height: 50vh;
+  background-color: #0d1b2a;
+  align-items: center;
+  
+}
+
+form {
+  margin: auto;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  border: none !important;
+  border-bottom:1px solid #e85d04!important;
+  background-color: #0d1b2a;
+  color: #e85d04;
+  border-style: solid;
+  border-radius: 0px;
+  
+}
+
+textarea {
+  padding: 5px;
+  font-size: 16px;
+  border: none !important;
+  border-bottom:1px solid #e85d04!important;
+  background-color: #0d1b2a;
+  color: #e85d04;
+  border-style: solid;
+  border-radius: 0px;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #44c767;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 14px;
+  padding: 13px 31px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #5cbf2a;
+}
+
+button:active {
+  position: relative;
+  outline: none;
+  top: 1px;
+}
