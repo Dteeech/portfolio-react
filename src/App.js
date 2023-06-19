@@ -1,19 +1,16 @@
-import Home from "./views/Home.jsx";
-import LeftProjects from "./views/Projects.jsx";
-import { Me } from "./views/Me.jsx";
+import Projects from "./views/Projects.jsx";
 import { Cv } from "./views/Cv.jsx";
 import { ContactForm } from "./views/ContactForm.jsx";
+import { PresentationCard } from "./views/PresentationCard.jsx";
 
 function App() {
   return (
     <div className="App">
       <main>
-        <Home />
-        <Me />
-        <LeftProjects />
+        <PresentationCard />
+        <Projects />
         <Cv />
         <ContactForm />
-        
       </main>
     </div>
   );

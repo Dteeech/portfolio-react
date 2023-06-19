@@ -25,7 +25,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
+  padding-top: 50px;
   color: #fff;
 }
 nav ul {
@@ -67,25 +67,39 @@ nav ul li > button:hover {
   height: 100vh;
 }
 
-.landingPage {
+.profileCard {
   display: flex;
+  width: 45vw;
   padding: 40px;
   flex-direction: column;
   margin: auto;
-  background-color: #0d1b2a;
+  margin-bottom: 30vh;
+  background-color: #0d1b2aab;
+  backdrop-filter: blur(4px);
 }
-
-.landingPage > div {
+.profileCard_header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profileCard .profileCard_body {
+  margin: auto;
+  display: flex;
+  width: 45%;
+  height: auto;
   justify-content: space-between;
   align-content: flex-start;
 }
-.landingPage > p {
+.profileCard_footer h2{
+  text-align: center;
+  font-size: 45px;
+}
+.profileCard > p {
   color: white;
   font-size: 3rem;
   width: 80%;
 }
-.landingPage > div > h1 {
+.profileCard > div > h1 {
   color: white;
   font-size: 3rem;
 }
@@ -94,29 +108,17 @@ nav ul li > button:hover {
   display: flex;
   flex-direction: column;
   margin: auto;
-}
-.projet1 {
-  display: flex;
-  padding: 5%;
-  color: white;
   background-color: #0d1b2a;
+  text-align: center;
 }
-.projet1_image {
-  width: 100%;
-  height: auto;
+.projectsContainer h2{
+  font-size: 3rem;
+  margin-top: 85px;
 }
-.projet1_description {
-  display: flex;
-  align-items: center;
-  
-}
-.projet1_description p {
-  padding-left: 10%;
-}
-
 .projet2 {
   display: flex;
   padding: 5%;
+  
 }
 .projet2_image {
   width: 100%;
@@ -124,20 +126,24 @@ nav ul li > button:hover {
 }
 .projet2_description {
   display: flex;
-  align-items: center;
-  backdrop-filter: blur(2px);
-  background-color: rgba(13, 27, 42, 0.35);
-  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
+
 .projet2_description p {
   padding-left: 10%;
 }
+
 /*************ME************/
+
 .me_container, .cv_container {
   margin: auto;
   width: 100%;
   padding-bottom: 5%;
 }
+
 .me_container div {
   display: flex;
   align-content: center;
@@ -213,6 +219,7 @@ input {
   color: #e85d04;
   border-style: solid;
   border-radius: 0px;
+  outline: none;
   
 }
 
@@ -237,7 +244,7 @@ textarea:focus {
 
 button {
   margin-top: 10px;
-  background-color: #44c767;
+  background-color: #7e04e8;
   border-radius: 5px;
   display: inline-block;
   cursor: pointer;
@@ -246,10 +253,13 @@ button {
   font-size: 14px;
   padding: 13px 31px;
   text-decoration: none;
+  border: 1px solid #0d1b2a;
 }
 
 button:hover {
-  background-color: #5cbf2a;
+  background-color: #FFF;
+  color: #7e04e8;
+  border: none;
 }
 
 button:active {
